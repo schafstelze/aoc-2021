@@ -1,11 +1,7 @@
 export const solutionDay01Part1 = (measurements: number[]): number => {
     let numberOfIncreases = 0
 
-    for (let index = 0; index < measurements.length; index++) {
-        if (index == 0) {
-            continue
-        }
-
+    for (let index = 1; index < measurements.length; index++) {
         if (measurements[index] - measurements[index - 1] > 0) {
             numberOfIncreases++
         }
@@ -23,7 +19,6 @@ export const solutionDay01Part2 = (measurements: number[]): number => {
 
         if (secondWindow - firstWindow > 0) {
             numberOfIncreases++
-        } else {
         }
     }
 
