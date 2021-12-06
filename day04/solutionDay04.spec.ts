@@ -1,4 +1,4 @@
-import {Bingo, Board, emptyBoard, Field, solutionday04Part1, solutionday04Part2} from "./solutionday04Part1";
+import {Bingo, Board, emptyBoard, Field, solutionday04Part1, solutionday04Part2} from "./solutionDay04";
 
 const fs = require('fs');
 
