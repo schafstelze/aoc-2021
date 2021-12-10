@@ -1,4 +1,4 @@
-import {solutionDay09Part1} from "./solutionDay09";
+import {solutionDay09Part1, solutionDay09Part2} from "./solutionDay09";
 
 const fs = require('fs');
 
@@ -27,5 +27,8 @@ describe('solutionDay09.ts', () => {
 
         expect(solutionDay09Part1(input1)).toBe(15)
         expect(solutionDay09Part1(input2)).toBe(633)
+
+        expect(solutionDay09Part2(input1)).toBe(1134)
+        expect(solutionDay09Part2(input2)).toBe(1050192)
     })
 })
