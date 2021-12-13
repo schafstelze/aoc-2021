@@ -8,17 +8,14 @@ const readFileIntoLines = (path: string): string[] => {
         .filter((line: string) => line.trim().length > 0)
 }
 
-describe('solutionDay11.ts', () => {
+describe('solutionDay12.ts', () => {
     it('should be correct', async () => {
-        let input1: number[][] = readFileIntoLines('day11/input1.txt')
-            .map((line: string) => line.split('')
-            .map(Number))
+        expect(solutionDay12(readFileIntoLines('day12/input1.txt'))).toBe(10)
+        expect(solutionDay12(readFileIntoLines('day12/input2.txt'))).toBe(19)
+        expect(solutionDay12(readFileIntoLines('day12/input3.txt'))).toBe(226)
+        expect(solutionDay12(readFileIntoLines('day12/input4.txt'))).toBe(4775)
 
-        let input2: number[][] = readFileIntoLines('day11/input2.txt')
-            .map((line: string) => line.split('')
-            .map(Number))
-
-        expect(solutionDay12(input1)).toBe(0)
-        expect(solutionDay12(input2)).toBe(0)
+        expect(solutionDay12Part2(readFileIntoLines('day12/input1.txt'))).toBe(36)
+        expect(solutionDay12Part2(readFileIntoLines('day12/input4.txt'))).toBe(152480)
     })
 })
